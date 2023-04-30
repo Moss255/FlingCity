@@ -1,0 +1,21 @@
+{
+    "zombieSpeed" : 0.5,
+    "baseFiringSpeed" : 4,
+    "levels" : [
+        {
+            "zombieSpawnRate" : 5
+        },
+        {
+            "zombieSpawnRate" : 4
+        },
+        {
+            "zombieSpawnRate" : 3
+        },
+        {
+            "zombieSpawnRate" : 2
+        },
+        {
+            "zombieSpawnRate" : 0.5
+        }
+    ]
+}
