@@ -3,19 +3,132 @@
     "baseFiringSpeed" : 4,
     "levels" : [
         {
-            "zombieSpawnRate" : 5
-        },
-        {
-            "zombieSpawnRate" : 4
-        },
-        {
+            "buildings" : [
+                {
+                    "filepath" : "cities/region_9.png",
+                    "health" : 100
+                },
+                {
+                    "filepath" : "cities/region_10.png",
+                    "health" : 100
+                },
+                {
+                    "filepath" : "cities/region_11.png",
+                    "health" : 100
+                }
+            ],
+            "enemiesCount" : 1,
             "zombieSpawnRate" : 3
         },
         {
+            "buildings" : [
+                {
+                    "filepath" : "cities/region_7.png",
+                    "health" : 100
+                },
+                {
+                    "filepath" : "cities/region_8.png",
+                    "health" : 100
+                },
+                {
+                    "filepath" : "cities/region_9.png",
+                    "health" : 100
+                }
+            ],
+            "enemiesCount" : 3,
+            "zombieSpawnRate" : 4
+        },
+        {
+            "buildings" : [
+                {
+                    "filepath" : "cities/region_5.png",
+                    "health" : 100
+                },
+                {
+                    "filepath" : "cities/region_6.png",
+                    "health" : 100
+                },
+                {
+                    "filepath" : "cities/region_7.png",
+                    "health" : 100
+                }
+            ],
+            "enemiesCount" : 5,
+            "zombieSpawnRate" : 3
+        },
+        {
+            "buildings" : [
+                {
+                    "filepath" : "cities/region_9.png",
+                    "health" : 100
+                },
+                {
+                    "filepath" : "cities/region_10.png",
+                    "health" : 100
+                },
+                {
+                    "filepath" : "cities/region_11.png",
+                    "health" : 100
+                }
+            ],
+            "enemiesCount" : 6,
             "zombieSpawnRate" : 2
         },
         {
+            "buildings" : [
+                {
+                    "filepath" : "cities/region_1.png",
+                    "health" : 100
+                },
+                {
+                    "filepath" : "cities/region_2.png",
+                    "health" : 100
+                },
+                {
+                    "filepath" : "cities/region_3.png",
+                    "health" : 100
+                }
+            ],
+            "enemiesCount" : 7,
             "zombieSpawnRate" : 0.5
+        }
+    ],
+    "actions" : [
+        {
+            "name" : "Question Mark",
+            "description" : "",
+            "cooldown" : 2,
+            "filepath" : "ammo/question.png"
+        },
+        {
+            "name" : "Heart For Eyes",
+            "description" : "",
+            "cooldown" : 1,
+            "filepath" : "ammo/hearts.png"
+        },
+        {
+            "name" : "XD",
+            "description" : "",
+            "cooldown" : 1,
+            "filepath" : "ammo/XD.png"
+        },
+        {
+            "name" : "Poop",
+            "description" : "",
+            "cooldown" : 1,
+            "filepath" : "ammo/poop.png"
+        },
+        {
+            "name" : "Censor",
+            "description" : "",
+            "cooldown" : 2,
+            "filepath" : "ammo/censor.png"
+        },
+        {
+            "name" : "Angry",
+            "description" : "",
+            "cooldown" : 1,
+            "filepath" : "ammo/angry.png"
         }
     ]
 }

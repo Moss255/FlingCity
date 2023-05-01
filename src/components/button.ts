@@ -1,9 +1,12 @@
-import { Container, DisplayObject, Sprite, Texture } from "pixijs";
+import { Container, DisplayObject, Sprite, Texture, Ticker } from "pixijs";
+import Config from '../config.json';
 
 export default class Button extends Sprite {
     type: number;
-    constructor(id: number, x: number, y: number, stage: Container<DisplayObject>) {
-        super(Texture.from(`ammo/region_${id}.png`));
+    cooldown: number;
+
+    constructor(id: number, x: number, y: number, stage: Container<DisplayObject>, ticker: Ticker) {
+        super(Texture.from(Config.actions[id].filepath));
 
         this.type = id;
 
@@ -13,10 +16,16 @@ export default class Button extends Sprite {
 
         this.interactive = true;
 
+        this.cooldown = Config.actions[id].cooldown;
+
         this.scale.set(2);
 
-        this.on('pointerdown', e => {
+        this.on('pointerdown', () => {
+            // this.cooldown = Config.actions[id].cooldown;
+            // @ts-ignore
             stage.emit('buttonPressed', { id });
-        })
+        });
+
+        ticker.add(() => {});
     }
 }

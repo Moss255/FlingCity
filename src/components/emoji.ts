@@ -7,7 +7,7 @@ import Config from '../config.json';
 export default class Emoji extends PIXI.Sprite {
     type: number;
     constructor(id: number, startPos: PIXI.Point, target: PIXI.Point, ticker: PIXI.Ticker) {
-        super(PIXI.Texture.from(`ammo/region_${id}.png`));
+        super(PIXI.Texture.from(Config.actions[id].filepath));
 
         this.x = startPos.x;
         this.y = startPos.y;
@@ -15,7 +15,7 @@ export default class Emoji extends PIXI.Sprite {
 
         this.type = id;
 
-        ticker.add((delta: number) => {
+        ticker.add(() => {
             if (this.destroyed) {
                 return;
             }

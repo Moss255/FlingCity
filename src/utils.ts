@@ -7,5 +7,5 @@ export const distanceBetweenPoints = (a: Point, b: Point) => {
 }
 
 export const getLaneXPosition = (screenWidth: number, line: number) => {
-    return screenWidth / 3 * line + 60
+    return screenWidth / 3 * line + 55
 }
